@@ -2,5 +2,5 @@
 
 Tristan
 Aymeric
-Sithami khaof
+Sithami Khaif
 Britney
