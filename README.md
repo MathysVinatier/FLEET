@@ -3,5 +3,5 @@
 Tristan
 Aymeric LEGRAND
 Tristan MONSELLIER
-Sithami Khai
+Sithami Khaif
 Britney
