@@ -7,8 +7,8 @@
 
 ## [Collaboration](collaboration)
 
-1. Controlling 1 unit robot 🔄
-2. Combine LORA and robot ( Telecommunication / Space locations ) ❎
+1. Controlling 1 unit robot ❎
+2. Combine LORA and robot ( Telecommunication / Space locations ) 🔄
 3. Robot formation mode ( mouvement + mapping ) ❎
 4. Multiprocess controlling ❎
 
