@@ -1,6 +1,6 @@
 # Fire Localizer Extinguisher Emergency Team
 
 Tristan
-Aymeric
+Aymeric LEGRAND
 Sithami
 Britney
