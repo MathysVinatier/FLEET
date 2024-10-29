@@ -16,7 +16,7 @@
 
 ## [Strategy](strategy)
 
-1. Creating the simulation enviromment ( x1 map / x3 robots / x1 cube) ❎
+1. Creating the simulation enviromment ( x1 map / x3 robots / x1 cube) 🔄
 2. Formation strategy ( Priority tasks / decentralization / Obstacles Detection ) ❎
 
 ## Additional Tasks
