@@ -12,6 +12,8 @@
 3. Robot formation mode ( mouvement + mapping ) ❎
 4. Multiprocess controlling ❎
 
+#------------------------------------------------------#
+
 ## [Strategy](strategy)
 
 1. Creating the simulation enviromment ( x1 map / x3 robots / x1 cube) ❎
