@@ -28,7 +28,7 @@
 
 ## Author
 
-HONG       Britney\ hello
+HONG       Britney\
 KHAIF      Sithami\
 LEGRAND    Aymeric\
 MONSELLIER Tristan\
