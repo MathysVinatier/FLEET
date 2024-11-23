@@ -18,7 +18,6 @@ WINDOW_SIZE = 600
 screen = pygame.display.set_mode((WINDOW_SIZE, WINDOW_SIZE))
 pygame.display.set_caption("Trois Robots autour de la Cible")
 
-
 """---------- Parametres ---------"""
 
 # Pos caserne
