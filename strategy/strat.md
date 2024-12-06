@@ -39,3 +39,4 @@
 # Trouver la stratégie à adopter 
 
 # -------- # 
+
