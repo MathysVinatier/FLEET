@@ -52,7 +52,7 @@ def matrix_to_surface(matrix, width, height):
     return pygame.transform.scale(surface, (width, height))
 
 # Charger l'image de la flèche (flèche pointant vers le haut)
-arrow_image = pygame.image.load("/Users/ecsrkhaif/Downloads/blue-arrow-png.png")  # Remplacez par le chemin vers votre image
+arrow_image = pygame.image.load("FLEET/strategy/images/blue-arrow-png.png")  # Remplacez par le chemin vers votre image
 arrow_image = pygame.transform.scale(arrow_image, (80, 80))  # Redimensionner l'image de la flèche (facultatif)
 
 # Fonction pour dessiner la flèche en fonction de l'angle
@@ -66,7 +66,7 @@ flora_density = generate_flora_density_matrix(MATRIX_SIZE)
 flora_surface = matrix_to_surface(flora_density, WIDTH, HEIGHT)
 
 # Image PANNEAU 
-image = pygame.image.load("/Users/ecsrkhaif/Downloads/France_road_sign_A24.svg.png")  # Remplacez par le chemin vers votre image
+image = pygame.image.load("FLEET/strategy/images/France_road_sign_A24.svg.png")  # Remplacez par le chemin vers votre image
 
 new_width = int(image.get_width() * 0.22)  # 50% de la largeur originale
 new_height = int(image.get_height() * 0.22)  # 50% de la hauteur originale
@@ -77,13 +77,12 @@ font = pygame.font.Font(None, 36)
 
 
 # IMAGE HOME
-image_home = pygame.image.load("/Users/ecsrkhaif/Downloads/—Pngtree—fisherman house top view_9041534.png")  # Remplacez par le chemin vers votre image
+"""image_home = pygame.image.load("/Users/ecsrkhaif/Downloads/—Pngtree—fisherman house top view_9041534.png")  # Remplacez par le chemin vers votre image
 image_home = pygame.transform.rotate(image_home, 90)
 new_width_home = int(image_home.get_width() * 0.06)  # 50% de la largeur originale
 new_height_home = int(image_home.get_height() * 0.06)  # 50% de la hauteur originale
 resized_image_home = pygame.transform.scale(image_home, (new_width_home, new_height_home))
-
-image_rect_home = resized_image_home.get_rect()  # Récupère les dimensions de l'image
+image_rect_home = resized_image_home.get_rect()  # Récupère les dimensions de l'image"""
 
 
 ### ------------ STRATEGIE -------------- ###
