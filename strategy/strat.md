@@ -12,7 +12,7 @@
 # - Sens de propa 
 # - Vitesse de prop
 
-## Priorité :
+## Priorité : 
 # - Habitation
 # - Sens de prop
 
@@ -39,4 +39,3 @@
 # Trouver la stratégie à adopter 
 
 # -------- # 
-
