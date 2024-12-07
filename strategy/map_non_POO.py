@@ -6,7 +6,7 @@ import math
 
 # ---- PARAMETRE DE LA CARTE ----- #
 pairs = [(60, 600), (60, 450), (500, 30), (500, 60), (380,70), (20, 400)]
-WIDTH, HEIGHT = 800, 800  
+WIDTH, HEIGHT = 600, 600  
 MATRIX_SIZE = 20  
 CASERNE_SIZE = 200, 80
 HOME_SIZE = 200, 80
@@ -52,7 +52,7 @@ def matrix_to_surface(matrix, width, height):
     return pygame.transform.scale(surface, (width, height))
 
 # Charger l'image de la flèche (flèche pointant vers le haut)
-arrow_image = pygame.image.load("FLEET/strategy/images/blue-arrow-png.png")  # Remplacez par le chemin vers votre image
+arrow_image = pygame.image.load("strategy/images/blue-arrow-png.png")  # Remplacez par le chemin vers votre image
 arrow_image = pygame.transform.scale(arrow_image, (80, 80))  # Redimensionner l'image de la flèche (facultatif)
 
 # Fonction pour dessiner la flèche en fonction de l'angle
@@ -66,7 +66,7 @@ flora_density = generate_flora_density_matrix(MATRIX_SIZE)
 flora_surface = matrix_to_surface(flora_density, WIDTH, HEIGHT)
 
 # Image PANNEAU 
-image = pygame.image.load("FLEET/strategy/images/France_road_sign_A24.svg.png")  # Remplacez par le chemin vers votre image
+image = pygame.image.load("strategy/images/France_road_sign_A24.svg.png")  # Remplacez par le chemin vers votre image
 
 new_width = int(image.get_width() * 0.22)  # 50% de la largeur originale
 new_height = int(image.get_height() * 0.22)  # 50% de la hauteur originale
