@@ -17,13 +17,11 @@ class MAP():
         
         self.add_habitation(5, 5, 5, 100)   # caserne
         self.add_habitation(50, 50, 5, 50)  # home
-        self.add_habitation(70, 70, 5, 50)  # home
+        self.add_habitation(60, 70, 5, 50)  # home
         self.add_habitation(50, 70, 5, 50)  # home
 
         pygame.init()
-        self.screen = pygame.display.set_mode((self.WIDTH, self.HEIGHT))
-        pygame.display.set_caption("Densité de Flore - Heatmap")
-
+        
 
     def generate_flora_density_matrix(self):
         """ Generates the vegetation densities matrix (values between 0 and 1) """
@@ -64,7 +62,7 @@ class MAP():
                 if 0 <= i < self.MATRIX_SIZE and 0 <= j < self.MATRIX_SIZE:
                     self.matrix[j, i] = density_value
 
-        self.surface = self.matrix_to_surface()
+        self.surface = self.matrix_to_surface()        
 
 
     def start_fire(self, x, y, size=1):
@@ -76,20 +74,23 @@ class MAP():
                     self.fire_matrix[j, i] = 2 
 
 
-    def draw_fire(self):
+    def draw_fire(self, screen):
         """ Changes the cells colors according to their state (1 : vegetation, 2 : fire, 3 : burnt) """
         for y in range(self.fire_matrix.shape[0]):
             for x in range(self.fire_matrix.shape[1]):
                 if self.fire_matrix[y, x] == 2:
-                    pygame.draw.rect(self.screen, (255, 0, 0), 
+                    pygame.draw.rect(screen, (255, 0, 0), 
                                     (x * self.CELL_SIZE, y * self.CELL_SIZE, self.CELL_SIZE, self.CELL_SIZE))
                 elif self.fire_matrix[y, x] == 3:
-                    pygame.draw.rect(self.screen, (105, 105, 105), 
+                    pygame.draw.rect(screen, (105, 105, 105), 
+                                    (x * self.CELL_SIZE, y * self.CELL_SIZE, self.CELL_SIZE, self.CELL_SIZE))
+                elif self.fire_matrix[y, x] == 4:
+                    pygame.draw.rect(screen, (0, 0, 255), 
                                     (x * self.CELL_SIZE, y * self.CELL_SIZE, self.CELL_SIZE, self.CELL_SIZE))
 
 
-    def draw_map(self):
-        self.screen.blit(self.surface, (0, 0))
+    def draw_map(self, screen):
+        screen.blit(self.surface, (0, 0))
 
 
 

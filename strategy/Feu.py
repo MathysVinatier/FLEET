@@ -1,6 +1,7 @@
 import pygame
 import random
 import numpy as np
+from Map import MAP
 
 """
 INFLAMMABILITE 
@@ -21,12 +22,13 @@ class Feu():
         self.RANDOMNESS_FACTOR = 0.5
         self.INFLAMMABILITY_TRESHOLD = 0.6
         self.COLORS = {
-            0: (0, 0, 0),      # empty
-            1: (34, 139, 34),  # vegetation (green)
-            2: (255, 0, 0),    # fire (red)
-            3: (105, 105, 105) # burnt (grey)
+            0: (0, 0, 0),       # empty
+            1: (34, 139, 34),   # vegetation  (green)
+            2: (255, 0, 0),     # fire        (red)
+            3: (105, 105, 105), # burnt       (grey)
+            4: (0, 0, 255)      # water       (blue)
         }
-
+        
 
     def calculate_wind_influence(self, dx, dy):
         """ Adds a weight according to the direction and speed of the wind """
@@ -57,3 +59,6 @@ class Feu():
                                         new_fire_matrix[ny, nx] = 2  
 
         self.map.fire_matrix = new_fire_matrix
+
+
+    
